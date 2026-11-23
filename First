@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Muhammad Afeef - Web Designer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* ===== General styles ===== */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #eef2f7;
+      color: #14213d;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, serif;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* ===== Navigation bar ===== */
+    .navbar {
+      background-color: #14213d;
+      padding: 15px 0;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h2 {
+      color: white;
+      margin: 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .navbar a:hover {
+      color: #ffc93c;
+    }
+
+    /* ===== Hero section ===== */
+    .hero {
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #55627a;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #2f5bff;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background-color: #ffc93c;
+      color: black;
+    }
+
+    /* ===== Projects section ===== */
+    .projects {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .project-box {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      width: 30%;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #cccccc;
+      border-radius: 10px;
+    }
+
+    .card:hover {
+      box-shadow: 0px 5px 15px gray;
+    }
+
+    /* ===== About section ===== */
+    .about {
+      background-color: white;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .about ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .about li {
+      margin: 10px 0;
+    }
+
+    /* ===== Contact section ===== */
+    .contact {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .contact input, .contact textarea {
+      width: 60%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      background-color: #2f5bff;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      background-color: #14213d;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* ===== Mobile screens ===== */
+    @media (max-width: 700px) {
+      .card {
+        width: 100%;
+      }
+      .contact input, .contact textarea {
+        width: 90%;
+      }
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <div class="navbar">
+    <div class="container">
+      <h2>Muhammad Afeef</h2>
+      <div>
+        <a href="#projects">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero section -->
+  <div class="hero">
+    <div class="container">
+      <h1>I build websites people enjoy using.</h1>
+      <p>I am a freelance web designer and developer. I help small businesses get a fast and good-looking website.</p>
+      <a href="#projects" class="button">See my work</a>
+      <a href="#contact" class="button">Start a project</a>
+    </div>
+  </div>
+
+  <!-- Projects section -->
+  <div class="projects" id="projects">
+    <div class="container">
+      <h2>Recent Projects</h2>
+      <div class="project-box">
+
+        <div class="card">
+          <h3>Brew&amp;Co Online Shop</h3>
+          <p>A coffee shop website with a simple checkout.</p>
+          <p><b>HTML, CSS, JavaScript</b></p>
+        </div>
+
+        <div class="card">
+          <h3>Lumen Photography</h3>
+          <p>A portfolio website with big galleries and a booking form.</p>
+          <p><b>Design, Responsive layout</b></p>
+        </div>
+
+        <div class="card">
+          <h3>FitTrack Landing Page</h3>
+          <p>A launch page that doubled sign-ups in one month.</p>
+          <p><b>UI design, Performance</b></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="about" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi, I'm Muhammad. I have five years of experience building websites for clients around the world.</p>
+      <p>I start every project by talking about your goals. Then I design, build, and launch your website.</p>
+
+      <h3>My Services</h3>
+      <ul>
+        <li>Website design</li>
+        <li>Front-end development</li>
+        <li>Site care (updates and fixes)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="contact" id="contact">
+    <div class="container">
+      <h2>Let's work together</h2>
+      <p>Send me a message and I will reply within two working days.</p>
+
+      <form onsubmit="sendMessage(event)">
+        <input type="text" id="name" placeholder="Your name" required><br>
+        <input type="email" id="email" placeholder="Your email" required><br>
+        <textarea id="message" rows="5" placeholder="Your message" required></textarea><br>
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2026 Muhammad Afeef. All rights reserved.</p>
+  </div>
+
+  <script>
+    // This function runs when the form is submitted
+    function sendMessage(event) {
+      event.preventDefault();              // stops the page from reloading
+      var name = document.getElementById("name").value;
+      alert("Thank you, " + name + "! Your message was received.");
+      event.target.reset();                // clears the form
+    }
+  </script>
+
+</body>
+</html>
